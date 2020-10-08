@@ -22,7 +22,7 @@
     <style type="text/css">
     /* image css */
     .top-right-image{
-      float: right; width: 450px;  margin-left: -24rem;
+      float: right; width: 500px;  margin-left: -24rem;
     }
     /* body css */
     body {
@@ -35,6 +35,8 @@
         text-align: left;
         font-size: 70px;
         margin-left: 27px;
+        margin-top: -1rem;
+        margin-bottom: 0rem;
       }
       .caption{
       	text-align: left;
@@ -92,18 +94,23 @@
 /*mobile view*/
 
 @media only screen and (max-width: 600px) {
+  .top-right-image{
+      float: right; width: 400px;  margin-left: -24rem;
+    
+    }
       
 	.contact-desktop{
      	margin : auto 1%;
      }
 
   .credentials-desktop{
-     	padding: none none;
-      margin: none none;
+     	padding: 0px 0px;
+      margin: 0px 0px;
      }
   .special-profile{
             /*line-height: 200%;*/
-            margin: auto 1%;
+            padding-right: 0px;
+            margin-left: 0px;
           }
   .heading {
         text-align: left;
@@ -170,7 +177,7 @@
       </div>
        <div class="col-lg-6 spec ">
             <p class="display-4 ">Credentials</p>
-            <ul>
+            <ul >
               <p  ><li class="lead credentials-desktop " >Certified Blockchain Expert</li></p>
               <p  ><li class="lead credentials-desktop " >Certified Solidity Expert</li></p>
               <p  ><li class="lead credentials-desktop " >Certified Bitcoin Professional</li></p>
@@ -180,9 +187,9 @@
               <p  ><li class="lead credentials-desktop " >Professional Scrum Master I (PSM I)</li></p>
               <p  ><li class="lead credentials-desktop " >Certified Scrum Master® (CSM®)</li></p>
             </ul>   
-        
-       </div>
-     </div>
+       </div></div>
+
+     
 
    
     <!-- third row -->

@@ -22,7 +22,7 @@
     <style type="text/css">
     /* image css */
     .top-right-image{
-      float: right; width: 500px;  margin-left: -24rem;
+      float: right; width: 450px;  margin-left: -24rem;
     }
     /* body css */
     body {
@@ -94,21 +94,25 @@
 @media only screen and (max-width: 600px) {
       
 	.contact-desktop{
-     	margin : auto 3%;
+     	margin : auto 1%;
      }
 
-      .credentials-desktop{
-     	margin-left: auto 0%;
+  .credentials-desktop{
+     	padding: none none;
+      margin: none none;
      }
-     .heading {
+  .special-profile{
+            /*line-height: 200%;*/
+            margin: auto 1%;
+          }
+  .heading {
         text-align: left;
         font-size: 60px;
        font-weight: bold;
        margin-left: -7rem;
-		
-		max-width: 800px;
+	      max-width: 800px;
 		      }
-      .caption{
+  .caption{
       	text-align: left;
       	font-size: 20px;
       	
@@ -116,8 +120,13 @@
       	max-width: 250px;
       }
       
-     
-      .visibility{
+  .spec{
+    padding-left: 0rem;
+    padding-right: 0 rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }   
+  .visibility{
       	visibility: collapse;
       }
 } 
@@ -152,15 +161,15 @@
     <!-- second row -->
 
      <div class="row">
-       <div class="col-lg-6 setright">
+       <div class="col-lg-6">
         <p class="display-4">Profile</p>
         <p class="lead special-profile">
             I am a Certified Professional Trainer in Blockchain, Cloud and Scrum. I have been fortunate enough to widespread my skills and accomplishments on the latest technologies to the upcoming talent. I have been a public speaker, a trainer and a guide to the
           <nobr>road-maps</nobr> of most <nobr>in-demand</nobr> technologies.
         </p>
       </div>
-       <div class="col-lg-6 ">
-            <p class="display-4 moveright">Credentials</p>
+       <div class="col-lg-6 spec ">
+            <p class="display-4 ">Credentials</p>
             <ul>
               <p  ><li class="lead credentials-desktop " >Certified Blockchain Expert</li></p>
               <p  ><li class="lead credentials-desktop " >Certified Solidity Expert</li></p>

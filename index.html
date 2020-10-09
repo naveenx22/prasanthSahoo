@@ -18,99 +18,93 @@
 
 <!-- ---------------------------------------------------------------------------------------------------- -->
     <style type="text/css">
-    /* image css */
     .top-right-image{
       float: right; width: 500px;  margin-left: -24rem;
     }
-    /* body css */
-    body {
+
+    html, body {
         font-family: 'Montserrat', sans-serif;
         background-color: #FFFFE0;
+        width: 100%;
+    	height: 100%;
+    	margin: 0px;
+    	padding: 0px;
+    	overflow-x: hidden; 
       }
-      
-    /* title and subtitle */
-      .heading {
-        text-align: left;
-        font-size: 70px;
-        margin-left: 27px;
-        margin-bottom: 0rem;
-      }
-      .caption{
-        text-align: left;
+
+
+
+      @media only screen and (min-width: 768px) {
+
+      .display4{
+      	color: sienna;
+  		font-size: 50px;
+  
+  } 
+
+  	#credentials{
+  		    font-size: 18px;
+
+  	}
+  	.leads,.contact{
         font-size: 20px;
-        margin-left: 35px;
-      }
-      .heading-info {
-        font-size: 20px;
-        text-align: center;
-      }
-      .display-4{
-        text-align: center;
-        font-size: 40px;
-        color: sienna;
-    }
-    /* some custom css*/
-
-
-     .credentials-desktop{
-      margin-left: 27%;
-     }
-     
-     .contact-desktop{
-      margin-left:32%;
-     }
-
-     .special-profile{
-            line-height: 200%;
-            margin-left: 15%;
-          }
-
-
-    .special-skills{
-            line-height: 200%;
-            margin-left: 5%;
-          }
-    .special-career{
-      font-style:italic;
-       text-align: center;
-       font-weight: bolder;
-    }     
-    
-    /*icon css*/
-    .svg {
-    display: inline-block;
-    width: 16.3px;
-    height: 13.45px;
-    overflow: hidden;
+       	
 }
+	.heading{
+        font-size: 60px;
+        font-weight: bold;
+        padding-left: 17rem;
+        margin-top: -22rem;
 
-#moveright{
-        
+	}
+
+    .caption{
+        font-size: 20px;
+        padding-left: 10rem;
       }
 
-/*mobile view*/
+    #language{
+    	margin-right: -4rem;
+    	padding-right: 15rem;
 
-@media only screen and (max-width: 600px) {
+    }  
+      #profile{
+    	line-height: 2.3rem;
+		margin-top: 1rem; 
+		padding-right: 5rem;
+   }    
+
+      }
+
+ 
+/*--------------------------------------------------------------------------------------*/
+
+
   .top-right-image{
-      float: right; width: 450px;  margin-left: -24rem;
-    
+      float: right;       
     }
       
-  .contact-desktop{
-      margin-left: 7px;
+  .contact{
       font-size: 15px;
+     
+     }
+    .leads, .contact , .display4{
+    	padding-left: 20px;
+    	padding-right: 15px;
+    }
+  .svg{
+    display: inline-block;
+    width: 20.3px;
+    height: 17.45px;
+    overflow: hidden;
+  }
+
+  .credentials{
+	line-height: 1rem;
+
      }
 
-  .credentials-desktop{
-      padding: 0px 0px;
-      margin: 0px 0px;
-     }
-  .special-profile{
-            /*line-height: 200%;*/
-            padding-right: 0px;
-            margin-left: 4px;
-            
-          }
+        
   .heading {
         text-align: left;
         font-size: 60px;
@@ -124,25 +118,17 @@
         font-size: 20px;
         
         margin-left: 8px;
-        max-width: 250px;
+        /*max-width: 250px;*/
       }
-      
-  .spec{
-    padding-left: 0rem;
-    padding-right: 0 rem;
-    margin-left: 0rem;
-    margin-right: 0rem;
-  }   
-  .svg{
-    display: inline-block;
-    width: 25.3px;
-    height: 22.45px;
-    overflow: hidden;
+  .display4{
+  	font-size: 40px;
+  	font-weight: 200px;
+  	color: sienna;
+  	padding-top: 10px;
   }
-  .visibility{
-        visibility: collapse;
-      }
-} 
+
+ 
+
          
     </style>
   </head>
@@ -153,7 +139,7 @@
 
     <!-- header graphics -->
 
-    <img src="first.png" class="visibility"  style="float: left;">
+    <img src="first.png"  style="float: left;">
     <img src="second.png"  class="top-right-image">
 
     <!-- first row -->
@@ -175,23 +161,23 @@
 
      <div class="row">
        <div class="col-lg-6">
-        <p class="display-4">Profile</p>
-        <p class="lead special-profile">
+        <p class="display4" id="profile">Profile</p>
+        <p class="leads special-profile" id="profile">
             I am a Certified Professional Trainer in Blockchain, Cloud and Scrum. I have been fortunate enough to widespread my skills and accomplishments on the latest technologies to the upcoming talent. I have been a public speaker, a trainer and a guide to the
           <nobr>road-maps</nobr> of most <nobr>in-demand</nobr> technologies.
         </p>
       </div>
-       <div class="col-lg-6 spec ">
-            <p class="display-4 ">Credentials</p>
+       <div class="col-lg-6">
+            <p class="display4 ">Credentials</p>
             <ul >
-              <p  ><li class="lead credentials-desktop " >Certified Blockchain Expert</li></p>
-              <p  ><li class="lead credentials-desktop " >Certified Solidity Expert</li></p>
-              <p  ><li class="lead credentials-desktop " >Certified Bitcoin Professional</li></p>
-              <p  ><li class="lead credentials-desktop " >Microsoft Certified Azure Admin</li></p>
-              <p  ><li class="lead credentials-desktop " >Certified Architect Pivotal Cloud Foundry</li></p>
-              <p  ><li class="lead credentials-desktop " >Certified Google Cloud Associate</li></p>
-              <p  ><li class="lead credentials-desktop " >Professional Scrum Master I (PSM I)</li></p>
-              <p  ><li class="lead credentials-desktop " >Certified Scrum Master® (CSM®)</li></p>
+              <p  ><li class="leads credentials " >Certified Blockchain Expert</li></p>
+              <p  ><li class="leads credentials " >Certified Solidity Expert</li></p>
+              <p  ><li class="leads credentials " >Certified Bitcoin Professional</li></p>
+              <p  ><li class="leads credentials " >Microsoft Certified Azure Admin</li></p>
+              <p  ><li class="leads credentials " >Certified Architect Pivotal Cloud Foundry</li></p>
+              <p  ><li class="leads credentials " >Certified Google Cloud Associate</li></p>
+              <p  ><li class="leads credentials " >Professional Scrum Master I (PSM I)</li></p>
+              <p  ><li class="leads credentials " >Certified Scrum Master® (CSM®)</li></p>
             </ul>   
        </div></div>
 
@@ -201,21 +187,21 @@
     <!-- third row -->
 
      <div class="row">
-       <div class="col-lg-6">
-    <p class="display-4">Language</p>
-    <p class="heading-info"  >English | Hindi | Telugu | Odia</p>
+       <div class="col-lg-6" id="language">
+    <p class="display4">Language</p>
+    <p class="leads"  >English | Hindi | Telugu | Odia</p>
     <br>
-    <p class="display-4">Skills</p>
-    <p class="heading-info special-skills">Blockchain Technology | Cryptocurrency | Solidity Programming | Ethereum | Agile | Scrum | Project Management | Cloud Computing | Microsoft Azure | Amazon Web Services | Google Cloud Platform | Kubernetes | Terraform
+    <p class="display4">Skills</p>
+    <p class="leads" style="line-height: 2.3rem">Blockchain Technology | Cryptocurrency | Solidity Programming | Ethereum | Agile | Scrum | Project Management | Cloud Computing | Microsoft Azure | Amazon Web Services | Google Cloud Platform | Kubernetes | Terraform
     </p>
 
   
        </div>
-       <div class="col-lg-6"  >
+       <div class="col-lg-6" id="credentials"  >
        
-              <p class="display-4">Professional Career</p>
-              <p class="special-career">Blockchain | Cloud | Scrum</p><br>
-              <div id="moveright" >
+              <p class="display4">Professional Career</p>
+              <p class="leads" style="font-weight: bold;">Blockchain | Cloud | Scrum</p>
+             
                 <ul>
               
               <p >
@@ -241,7 +227,7 @@
               <p ><li>Technical Reviewer at Apress, Springer Nature</li></p>
             </ul>
               
-          </div>
+          
               
        </div>
      </div>
@@ -250,16 +236,16 @@
 
      <div class="row">
         <div class="col-lg-6">
-          <p class="display-4">Contact</p>  
-          <a class="lead contact-desktop contact-mobile"><img src="phone.svg" class="svg">&nbsp;&nbsp;&nbsp; +91-90306-42857</a><br>
-          <a class="lead contact-desktop contact-mobile" href="mailto:prasanthsahoo45@gmail.com"><img src="email.svg" class="svg">&nbsp;&nbsp; prasanthsahoo45@gmail.com</a> <br>
-          <a class="lead contact-desktop contact-mobile" href="https://www.linkedin.com/in/prasanth-sahoo/"><img src="linkedin.svg" class="svg">&nbsp;&nbsp; linkedin.com/in/prasanth-sahoo</a><br>
-          <a class="lead contact-desktop contact-mobile" href="https://www.prasanthsahoo.com"><img src="website.svg" class="svg">&nbsp;&nbsp; www.prasanthsahoo.com</a>
+          <p class="display4">Contact</p>  
+          <a class="contact"><img src="phone.svg" class="svg">&nbsp;&nbsp;&nbsp; +91-90306-42857</a><br>
+          <a class="contact" href="mailto:prasanthsahoo45@gmail.com"><img src="email.svg" class="svg">&nbsp;&nbsp; prasanthsahoo45@gmail.com</a> <br>
+          <a class="contact" href="https://www.linkedin.com/in/prasanth-sahoo/"><img src="linkedin.svg" class="svg">&nbsp;&nbsp; linkedin.com/in/prasanth-sahoo</a><br>
+          <a class="contact" href="https://www.prasanthsahoo.com"><img src="website.svg" class="svg">&nbsp;&nbsp; www.prasanthsahoo.com</a>
         </div>
         <div class="col-lg-6">
           <br><br><br>
-          <p class="heading-info "><strong>Scrum Master &amp; Cloud Engineer</strong></p>
-          <p class="heading-info "><em>Tata Consultancy Services</em></p>
+          <p class="leads "><strong>Scrum Master &amp; Cloud Engineer</strong></p>
+          <p class="leads "><em>Tata Consultancy Services</em></p>
         </div>
       </div>
 
